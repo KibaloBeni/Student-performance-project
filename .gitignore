@@ -1,68 +1,38 @@
-# ===============================
-# Python
-# ===============================
-
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
-*$py.class
-
-# Distribution / packaging
-build/
-dist/
+*.pyo
+*.pyd
+.Python
+*.egg
 *.egg-info/
-.eggs/
+dist/
+build/
+*.whl
 
-# ===============================
-# Virtual environments
-# ===============================
-
+# ── Virtual environments ───────────────────────────────────────────────────────
+.venv/
 venv/
 env/
 ENV/
-.venv/
 
-# ===============================
-# Jupyter Notebook
-# ===============================
+# ── Jupyter ────────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
 
-.ipynb_checkpoints
+# ── Node (should not be here for a Python project) ────────────────────────────
+node_modules/
+package-lock.json
+package.json
 
-# ===============================
-# Logs
-# ===============================
-
-*.log
-
-# ===============================
-# System files
-# ===============================
-
+# ── OS & editors ───────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
-
-# ===============================
-# IDE / Editors
-# ===============================
-
-.vscode/
 .idea/
+.vscode/
+*.swp
+*.swo
 
-# ===============================
-# Data files (optionnel)
-# ===============================
-
-data/raw/
-data/large/
-
-# ===============================
-# Python environment files
-# ===============================
-
-.python-version
-
-# ===============================
-# Cache
-# ===============================
-
-.cache/
-.pytest_cache/
+# ── Data & outputs (fetched at runtime via ucimlrepo) ─────────────────────────
+data/
+*.csv
+*.parquet
